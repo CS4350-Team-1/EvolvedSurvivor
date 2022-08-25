@@ -4,10 +4,16 @@ using MoreMountains.TopDownEngine;
 
 public class CombatAbility : MonoBehaviour
 {
-    [SerializeField] private float abilityCooldown;
+    [SerializeField] private bool isValidAbility;
     [SerializeField] private MMObjectPooler objectPool;
-    [SerializeField] private bool isLockOn;
-    [SerializeField] private bool isValidAbility; 
+
+    [SerializeField] private float abilityCooldown;
+    [SerializeField] private float size;
+    [SerializeField] private float speed;
+    [SerializeField] private float count;
+    [SerializeField] private float damage;
+    [SerializeField] private string[] statusEffects;
+    [SerializeField] private string attackType;
 
     private float remainingCooldown;
 
@@ -18,19 +24,12 @@ public class CombatAbility : MonoBehaviour
 
     private void Update()
     {
-        FireAbility();
+        if (isValidAbility) FireAbility();
     }
     
     private void FireAbility()
-    {
-        if (!isValidAbility)
-        {
-            return;
-        } 
-        else
-        {
-            remainingCooldown -= Time.deltaTime;
-        }
+    { 
+        remainingCooldown -= Time.deltaTime;
 
         if (remainingCooldown <= 0f)
         {
@@ -50,5 +49,15 @@ public class CombatAbility : MonoBehaviour
         projectile.SetDirection(
             new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f),
             transform.rotation);
+    }
+
+    public void SetNewStats(CombatAbility newAbility) {
+        this.abilityCooldown = newAbility.abilityCooldown;
+        this.size = newAbility.size;
+        this.speed = newAbility.speed;
+        this.count = newAbility.count;
+        this.damage = newAbility.damage;
+        this.statusEffects = newAbility.statusEffects;
+        this.attackType = newAbility.attackType;
     }
 }
