@@ -19,7 +19,7 @@ public class TargetLaserGroup : MonoBehaviour
     [SerializeField] private float damageValue = 1000f;
 
     [Header("Sound")]
-    [SerializeField] private SfxHandler warmupSfxHandler;
+    [SerializeField] private LoopingSfxHandler warmupSfxHandler;
     [SerializeField] private SfxHandler fireSfxHandler;
     [SerializeField] private SfxHandler explosionSfxHandler;
 

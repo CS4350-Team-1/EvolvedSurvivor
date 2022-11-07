@@ -351,7 +351,6 @@ MonoBehaviour:
   DebugActive: 0
   FeedbacksList:
   - rid: 1295320814633615374
-  - rid: 1295320814633615375
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 0
@@ -402,43 +401,6 @@ MonoBehaviour:
         MinPitch: 1
         MaxPitch: 1
         SfxAudioMixerGroup: {fileID: 0}
-    - rid: 1295320814633615375
-      type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
-      data:
-        Active: 0
-        UniqueID: -1213538424
-        Label: Particles
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 0
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        Owner: {fileID: 5633355157281015665}
-        DebugActive: 0
-        Mode: 0
-        BoundParticleSystem: {fileID: 0}
-        RandomParticleSystems: []
-        MoveToPosition: 0
-        ActivateOnPlay: 0
-        StopSystemOnInit: 1
 --- !u!1 &7639002971553439240
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +752,7 @@ MonoBehaviour:
     Actions:
       array:
       - {fileID: 4072246084683858285}
+      - {fileID: 2219450375520854179}
     Transitions:
       array:
       - Decision: {fileID: 4469927918188013964}
@@ -1168,7 +1131,6 @@ MonoBehaviour:
   damageArea: {fileID: 7423655912554669546}
   health: {fileID: 7750977142303885208}
   movement: {fileID: 7751080476582257864}
-  aiBrain: {fileID: 7751210001397076598}
   spawnManager: {fileID: 11400000, guid: c8a4edc2ef48d224e9560953b32268f1, type: 2}
   initialSecondaryDamage: 10
   secDamageArea: {fileID: 2689226587219063426}
@@ -1206,9 +1168,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 359fab1e8941547fe878d8ab46cffa82, type: 3}
-  volume: 1
-  loop: 0
-  id: 0
 --- !u!1 &7639620610091389554
 GameObject:
   m_ObjectHideFlags: 0

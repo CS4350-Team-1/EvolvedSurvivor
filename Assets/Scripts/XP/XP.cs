@@ -96,11 +96,11 @@ namespace MoreMountains.TopDownEngine
 		private IEnumerator LevelUp(float waitTime)
 		{
 			levelUpEffect.Play();
+            levelUpSfxHandler.PlaySfx();
 
             yield return new WaitForSeconds(waitTime);
             guiUpdater.OnLevelUp();
             guiUpdater.OnXpChange(CurrentXP, XPToNextLevel);
-            levelUpSfxHandler.PlaySfx();  
         }
 
 		/// <summary>

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private Text counter;
+    [SerializeField] private float gameLength = 600f;
 
     private float timePassed = 0f;
     private bool isTimerRunning = true;
@@ -32,5 +33,10 @@ public class Timer : MonoBehaviour
     public string GetFinalTime()
     {
         return counter.text;
+    }
+
+    public bool LevelWasPassed()
+    {
+        return timePassed > gameLength;
     }
 }

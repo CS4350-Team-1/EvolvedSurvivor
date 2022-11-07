@@ -27,7 +27,6 @@ namespace TeamOne.EvolvedSurvivor
         protected override void Activate()
         {
             StartCoroutine(SpawnLasers(laserNumber.value));
-            sfxHandler.PlaySfx();
         }
 
         private void SpawnLaser(Transform target = null)
@@ -48,6 +47,7 @@ namespace TeamOne.EvolvedSurvivor
             Vector3 direction = (target.position - transform.position).normalized;
             laser.InitializeLaser(transform, direction, projectileSize.value);
             laser.SetLifeTime(duration.value);
+            sfxHandler.PlaySfx();
 
             if (hasRecursive)
             {

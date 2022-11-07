@@ -8,7 +8,7 @@ namespace TeamOne.EvolvedSurvivor
         private bool isTracking = true;
         private float angularVelocity = 180f;
 
-        [SerializeField] SfxHandler sfxHandler;
+        [SerializeField] private LoopingSfxHandler sfxHandler;
 
         public void SetTarget(GameObject target)
         {
@@ -16,12 +16,13 @@ namespace TeamOne.EvolvedSurvivor
             isTracking = true;
         }
 
-
         protected override void Update()
         {
+            base.Update();
+
             if (!isTracking)
             {
-                base.Update();
+                return;
             }
 
             Vector3 direction = (target.transform.position - transform.position).normalized;
@@ -30,8 +31,6 @@ namespace TeamOne.EvolvedSurvivor
                 float rotateAmount = Vector3.Cross(direction, motion).z;
                 this.transform.Rotate(0f, 0f, -rotateAmount * angularVelocity * Time.deltaTime);
                 this.motion = transform.up;
-
-                base.Update();
             } 
             else
             {

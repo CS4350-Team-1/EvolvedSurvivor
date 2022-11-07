@@ -188,7 +188,6 @@ MonoBehaviour:
   DebugActive: 0
   FeedbacksList:
   - rid: 1295320814633615382
-  - rid: 1295320814633615383
   KeepPlayModeChanges: 0
   PerformanceMode: 0
   ForceStopFeedbacksOnDisable: 0
@@ -239,43 +238,6 @@ MonoBehaviour:
         MinPitch: 1
         MaxPitch: 1
         SfxAudioMixerGroup: {fileID: 0}
-    - rid: 1295320814633615383
-      type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Feedbacks}
-      data:
-        Active: 0
-        UniqueID: -1806955293
-        Label: Particles
-        Channel: 0
-        Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
-        Timing:
-          TimescaleMode: 0
-          ExcludeFromHoldingPauses: 0
-          ContributeToTotalDuration: 1
-          InitialDelay: 0
-          CooldownDuration: 0
-          InterruptsOnStop: 1
-          NumberOfRepeats: 0
-          RepeatForever: 0
-          DelayBetweenRepeats: 1
-          MMFeedbacksDirectionCondition: 0
-          PlayDirection: 0
-          ConstantIntensity: 0
-          UseIntensityInterval: 0
-          IntensityIntervalMin: 0
-          IntensityIntervalMax: 0
-          Sequence: {fileID: 0}
-          TrackID: 0
-          Quantized: 0
-          TargetBPM: 120
-        Owner: {fileID: 5633355157281015665}
-        DebugActive: 0
-        Mode: 0
-        BoundParticleSystem: {fileID: 0}
-        RandomParticleSystems: []
-        MoveToPosition: 0
-        ActivateOnPlay: 0
-        StopSystemOnInit: 1
 --- !u!1 &7638588149240438170
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +645,7 @@ MonoBehaviour:
     Actions:
       array:
       - {fileID: -5462299731838461371}
+      - {fileID: -6232343430091109303}
     Transitions:
       array:
       - Decision: {fileID: 9222946713112327023}
@@ -993,7 +956,6 @@ MonoBehaviour:
   damageArea: {fileID: 560260766162801752}
   health: {fileID: 7750977142303885208}
   movement: {fileID: 7751080476582257864}
-  aiBrain: {fileID: 7751210001397076598}
   spawnManager: {fileID: 11400000, guid: c8a4edc2ef48d224e9560953b32268f1, type: 2}
 --- !u!114 &4865310587204656476
 MonoBehaviour:

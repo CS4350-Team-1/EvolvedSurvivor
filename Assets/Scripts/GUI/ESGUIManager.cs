@@ -25,14 +25,14 @@ public class ESGUIManager : MonoBehaviour, MMEventListener<TopDownEngineEvent>
     {
         guiUpdater.XpChangeEvent.AddListener(UpdateXPBar);
         guiUpdater.LevelUpEvent.AddListener(ShowLevelUpScreen);
-        this.MMEventStartListening<TopDownEngineEvent>();
+        this.MMEventStartListening();
     }
 
     private void OnDisable()
     {
         guiUpdater.XpChangeEvent.RemoveListener(UpdateXPBar);
         guiUpdater.LevelUpEvent.RemoveListener(ShowLevelUpScreen);
-        this.MMEventStopListening<TopDownEngineEvent>();
+        this.MMEventStopListening();
     }
 
     private void Start()
@@ -50,11 +50,8 @@ public class ESGUIManager : MonoBehaviour, MMEventListener<TopDownEngineEvent>
             isLevelUpScreenVisible = true;
             LevelUpScreen.SetActive(true);
             EventSystem.current.sendNavigationEvents = true;
-            
-            // if time is not already stopped		
-			if (Time.timeScale > 0f){
-                gameManager.Pause(PauseMethods.NoPauseMenu);
-            }
+             
+            gameManager.Pause(PauseMethods.NoPauseMenu);
         }
     }
 
@@ -77,9 +74,8 @@ public class ESGUIManager : MonoBehaviour, MMEventListener<TopDownEngineEvent>
 
     public void OnMMEvent(TopDownEngineEvent eventType)
     {
-        bool isTogglePauseEvent = eventType.EventType == TopDownEngineEventTypes.TogglePause;
-
-        if (isTogglePauseEvent && isLevelUpScreenVisible) {
+        if (eventType.EventType == TopDownEngineEventTypes.UnPause && isLevelUpScreenVisible)
+        {
             isLevelUpScreenVisible = false;
             LevelUpScreen.SetActive(false);
         }

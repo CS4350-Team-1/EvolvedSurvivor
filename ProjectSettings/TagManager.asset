@@ -11,6 +11,8 @@ TagManager:
   - NoMask
   - AbilitySprite
   - ESPickup
+  - FxTemporaire
+  - PlayerModel
   layers:
   - Default
   - TransparentFX

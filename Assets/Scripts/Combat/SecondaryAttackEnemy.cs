@@ -16,7 +16,7 @@ namespace TeamOne.EvolvedSurvivor
         {
             base.ScaleStats(enemyLevel);
 
-            this.currentSecondaryDamage = initialSecondaryDamage * 0.5f * (1f + enemyLevel);
+            this.currentSecondaryDamage = initialSecondaryDamage * 0.6f * (1f + enemyLevel);
 
             if (this.secDamageArea != null)
             {

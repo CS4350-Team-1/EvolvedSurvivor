@@ -352,6 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87063d27ca82e45459e95cc2b76cc545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 6155806359108223306}
@@ -566,6 +568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebfdbc2ae3cbea40a3cb6f737496e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 8403810314497745603}
@@ -710,6 +714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22edfd80b95b6a49bf734ba40f0f65d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   radarChart: {fileID: 3754251100954270614}
   detailedView: {fileID: 1333174596740307889}
   changeViewButton: {fileID: 1333174594836829476}
@@ -851,6 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 150857068328644310}
@@ -1073,7 +1081,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 88}
+  m_SizeDelta: {x: 0, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333174594953888486
 CanvasRenderer:
@@ -1103,8 +1111,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b5af5f7855e2704ba8dc542d2d3cac0, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 361847608b10b8b4da0dc96ec6fff9c9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1182,19 +1190,7 @@ MonoBehaviour:
         m_CallState: 2
   ButtonPressed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: XPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   DisabledSprite: {fileID: 0}
   DisabledChangeColor: 0
   DisabledColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2128,6 +2124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d4b4d7c92d4811a93bd13b1631748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 6803250711926474159}
@@ -2269,6 +2267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 4424631376395845013}
@@ -2658,6 +2658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 8690070770256365719}
@@ -3236,6 +3238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87063d27ca82e45459e95cc2b76cc545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 1565837018248622034}
@@ -3454,6 +3458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d4b4d7c92d4811a93bd13b1631748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 4372415412102847874}
@@ -3673,6 +3679,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d4b4d7c92d4811a93bd13b1631748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 7357091638359665449}
@@ -3813,6 +3821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d4b4d7c92d4811a93bd13b1631748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 8925580872708127351}
@@ -3953,6 +3963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87063d27ca82e45459e95cc2b76cc545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 5784272952084140221}
@@ -4137,6 +4149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ebfdbc2ae3cbea40a3cb6f737496e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 4376291132649417472}
@@ -4555,6 +4569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 396395529145053127}
@@ -5224,6 +5240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 7772947667398152018}
@@ -5380,6 +5398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d930cd0e23c4840957568f9ab96675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 8337069129534579287}
@@ -6193,7 +6213,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 88}
+  m_SizeDelta: {x: 0, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333174596410528584
 CanvasRenderer:
@@ -6223,8 +6243,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b5af5f7855e2704ba8dc542d2d3cac0, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 361847608b10b8b4da0dc96ec6fff9c9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6302,19 +6322,7 @@ MonoBehaviour:
         m_CallState: 2
   ButtonPressed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: XPressed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   DisabledSprite: {fileID: 0}
   DisabledChangeColor: 0
   DisabledColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6535,6 +6543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87063d27ca82e45459e95cc2b76cc545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 237960987264598390}
@@ -7293,7 +7303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 365}
+  m_AnchoredPosition: {x: 0, y: 400}
   m_SizeDelta: {x: 500, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1333174596748571091
@@ -7469,6 +7479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9d4b4d7c92d4811a93bd13b1631748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 4659998778957451526}
@@ -8184,6 +8196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b59bb0c2ee2f844e87f5fee8be39a96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSfxHandler: {fileID: 0}
+  enterSfxHandler: {fileID: 0}
   textObj: {fileID: 1333174596107731280}
   detailedTextObj: {fileID: 1333174595288166882}
   upgradableSprite: {fileID: 8403960385555585455}

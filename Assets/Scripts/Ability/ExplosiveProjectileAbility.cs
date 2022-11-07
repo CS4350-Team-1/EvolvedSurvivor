@@ -29,7 +29,6 @@ namespace TeamOne.EvolvedSurvivor
         protected override void Activate()
         {
             StartCoroutine(SpawnProjectiles(projectileNumber.value));
-            sfxHandler.PlaySfx();
         }
 
         private void SpawnExplosiveProjectile(Transform target=null)
@@ -68,6 +67,7 @@ namespace TeamOne.EvolvedSurvivor
             }
             Vector2 motion = direction * projectileSpeed;
             projectile.SetMotion(motion);
+            sfxHandler.PlaySfx();
         }
 
         private IEnumerator SpawnProjectiles(int projectileCount)

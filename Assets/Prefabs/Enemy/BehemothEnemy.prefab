@@ -710,6 +710,7 @@ MonoBehaviour:
     Actions:
       array:
       - {fileID: -5462299731838461371}
+      - {fileID: -6232343430091109303}
     Transitions:
       array:
       - Decision: {fileID: 9222946713112327023}
@@ -1045,7 +1046,7 @@ MonoBehaviour:
   NestUnderThis: 0
   GameObjectToPool: {fileID: 1133100380862132, guid: 4b0d4f10a5bd7544ba47083905870046,
     type: 3}
-  PoolSize: 5
+  PoolSize: 2
   PoolCanExpand: 1
 --- !u!114 &7676436023281395966
 MonoBehaviour:
@@ -1065,7 +1066,6 @@ MonoBehaviour:
   damageArea: {fileID: 560260766162801752}
   health: {fileID: 7750977142303885208}
   movement: {fileID: 7751080476582257864}
-  aiBrain: {fileID: 7751210001397076598}
   spawnManager: {fileID: 11400000, guid: c8a4edc2ef48d224e9560953b32268f1, type: 2}
   initialSecondaryDamage: 12
   secDamageArea: {fileID: 0}
@@ -1103,9 +1103,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: 4d04b6c17cc314e8ba1c5c751bb6dd58, type: 3}
-  volume: 1
-  loop: 0
-  id: 0
 --- !u!1 &7639620610091389554
 GameObject:
   m_ObjectHideFlags: 0

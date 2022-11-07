@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4088140799272747558}
   m_Layer: 10
   m_Name: PlayerModel
-  m_TagString: Untagged
+  m_TagString: PlayerModel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -579,10 +579,10 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.2
+      value: 1.3
       inSlope: 1.1534594
-      outSlope: -0.10032816
-      tangentMode: 1
+      outSlope: -1
+      tangentMode: 65
       weightedMode: 0
       inWeight: 0
       outWeight: 0.12969431
@@ -597,17 +597,17 @@ MonoBehaviour:
       outWeight: 0.09770403
     - serializedVersion: 3
       time: 0.7
-      value: 1
-      inSlope: -0.010807935
-      outSlope: 0
-      tangentMode: 65
+      value: 1.01
+      inSlope: -0.061111055
+      outSlope: -0.061111055
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0.15908638
-      outWeight: 0.104508705
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: -0
+      inSlope: -0.0333333
       outSlope: 0
       tangentMode: 5
       weightedMode: 0
@@ -683,7 +683,6 @@ MonoBehaviour:
   sfx: {fileID: 8300000, guid: bff68ea73685f4289b26d714518498f8, type: 3}
   volume: 1
   loop: 0
-  id: 0
 --- !u!114 &1226762968564970562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +698,6 @@ MonoBehaviour:
   sfx: {fileID: 8300000, guid: f1684d3cbaa94406e9ebf364580da045, type: 3}
   volume: 1
   loop: 0
-  id: 0
   health: {fileID: 114171358364461030}
 --- !u!1 &905297264760070559
 GameObject:
